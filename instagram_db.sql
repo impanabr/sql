@@ -70,6 +70,9 @@ INSERT INTO posts VALUES
 (13,13,'Post 13','2023-01-13',19,3,'Indore'),
 (14,14,'Post 14','2023-01-14',23,4,'Bhopal'),
 (15,15,'Post 15','2023-01-15',27,3,'Mysore');
+INSERT INTO users VALUES(16,'user16','u16@gmail.com','pass12345','9000000016','Female',NOW(),'New user');
+UPDATE posts SET likes_count = 100 WHERE posts_id = 1;
+DELETE FROM posts WHERE user_id = 16 ;
 select*from Post;
 
 CREATE TABLE likes (
@@ -176,3 +179,4 @@ INSERT INTO reel_likes VALUES
 (4,4,5,'2023-01-04'),
 (5,5,6,'2023-01-05');
 select * from reel_likes;
+
